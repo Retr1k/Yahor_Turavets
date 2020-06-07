@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag area</title>
+    <style>
+        body {
+            margin: 5% 15% 5%;
+            font-family: Roboto,sans-serif;
+        }
+        h1, tr {
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+        .tag{
+            color: cornflowerblue;
+        }
+        .atr{
+        color: #b22222;
+        }
+        .def {
+        color: #6a5acd;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML тег <span class="tag"> &#60;area&#62;</span></h1>
+    <h2>Значение и применение</h2>
+    <p>
+        Тег <span class="tag">&#60;area&#62;</span> определяет интерактивную область в изображении-карте (элемент <span class="tag">&#60;map&#62;</span>), т.е. при клике на определённую область изображения происходят определённые действия, например, открывается отдельная страница с описанием данного участка изображения.
+    </p>
+    <h2>Атрибуты</h2>
+    <div>
+        <table>
+        <tbody>
+            <tr> 
+                <th>Атрибут</th>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td class="atr">alt</td>
+                <td class="def">text</td>
+                <td>Указывает альтернативный текст для области. Если атрибут href присутствует, то является обязательным!.</td>
+            </tr>
+            <tr>
+                <td class="atr">coords</td>
+                <td class="def">coordinates</td>
+                <td>Указывает координаты области.</td>
+            </tr>
+            <tr>
+                <td class="atr">download</td>
+                <td class="def">filename</td>
+                <td>Указывает, что файл будет загружен при клике на определённый участок.</td>
+            </tr>
+            <tr>
+                <td class="atr">href</td>
+                <td class="def">URL</td>
+                <td>Определяет гиперссылку на площади.</td>
+            </tr>
+            <tr>
+                <td class="atr">hreflang</td>
+                <td class="def">language_code</td>
+                <td>Определяет язык целевой URL.</td>
+            </tr>
+            <tr>
+                <td class="atr">media</td>
+                <td class="def">media query</td>
+                <td>Указывает, что целевая URL оптимизирована для определённых устройств.</td>
+            </tr>
+            <tr>
+                <td class="atr">rel</td>
+                <td class="def">
+                    alternate <br>
+                    author <br>
+                    bookmark <br>
+                    help <br>
+                    license <br>
+                    next <br>
+                    nofollow <br>
+                    noreferrer <br>
+                    prefetch <br>
+                    prev <br>
+                    search <br>
+                    tag
+                </td>
+                <td>Указывает отношение между текущим документом и целевым URL.</td>
+            </tr>
+            <tr>
+                <td class="atr">shape</td>
+                <td class="def">
+                    default <br>
+                    rect <br>
+                    circle <br>
+                    poly
+                </td>
+                <td>Указывает форму области.</td>
+            </tr>
+            <tr>
+                <td class="atr">target</td>
+                <td class="def">
+                    _blank <br>
+                    _parent <br>
+                    _self <br>
+                    _top <br>
+                    framename
+                </td>
+                <td>Определяет, где открыть целевой URL.</td>
+            </tr>
+            <tr>
+                <td class="atr">type</td>
+                <td class="def">media_type</td>
+                <td>Атрибут определяет MIME-тип целевого URL.</td>
+            </tr>
+        </tbody>
+        </table>
+    </div> 
+         <p>
+                Атрибутами тега <span class="tag">&#60;area&#62;</span> мы указываем как координаты области (атрибут <span class="atr">coords</span> ), так и тип необходимой нам фигуры (атрибут <span class="atr">shape</span>):
+            </p>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Значение атрибута</th>
+                            <th>Определение</th>
+                        </tr>
+                        <tr>
+                            <td class="def">default</td>
+                            <td>Весь регион.</td>
+                        </tr>
+                        <tr>
+                            <td class="def">rect</td>
+                            <td>Прямоугольная область (x1,y1,x2,y2).</td>
+                        </tr>
+                        <tr>
+                            <td class="def">circle</td>
+                            <td>Круглая область (x,y,r- радиус).</td>
+                        </tr>
+                        <tr>
+                            <td class="def">poly</td>
+                            <td>Многоугольную область (x1,y1,x2,y2,...,xn,yn).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <figure style="text-align: center;">
+                <img src="img/show.GIF" alt="coordinates">
+                <figcaption>Создание активной области с использованием системы координат.</figcaption>
+            </figure>
+            <h2>Пример использования</h2>
+            <p>Давайте рассмотрим пример в котором при клике по определённой фигуре на одном рисунке происходит переход на разные веб-страницы, которые описывают эти фигуры (ссылки на Википедию):</p>
+
+            <img src="img/map1.png" usemap="#figuri" alt="Доступно 3 фигуры для выбора">
+            <map name="figuri">
+                <area shape="rect" coords="25,25,125,125" href="https://ru.wikipedia.org/wiki/Квадрат" alt="Квадрат" target="_blank">
+                <area shape="circle" coords="200,75,50" href=" https://ru.wikipedia.org/wiki/Круг" alt="Круг" target="_blank">
+                <area shape="poly" coords="325,25,262,125,388,125" href=" https://ru.wikipedia.org/wiki/Треугольник" alt="Треугольник" target="_blank">
+            </map>
+    </body>
+</html>
