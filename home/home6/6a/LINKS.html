@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        html{
+            font-size: 22px;
+        }
+        a {
+            color: green;            
+            padding: 5px 10px 10px 0;
+        }
+        a:hover {
+            color: red;
+        }
+        div.first a:not(:last-child) {
+            border-right: solid red 3px;
+        }
+        div.second {            
+            margin-top: 20px;
+        }
+        div.second a {
+            padding-right: 5px;
+        }
+        div.second div {
+            display: inline-block;
+            background-color: red; 
+            width: 3px; 
+            height: 33px;
+            vertical-align: middle;            
+        }
+        div.third div{
+            display: inline-block;
+            margin-top: 10px;
+        }
+        div.third div:not(:last-child)::after{
+            content: url(../img/line.png);
+            vertical-align: middle; 
+        }
+                
+    </style>
+</head>
+<body>
+        <!--Первый способ самый простой, т.к. тег а является строчным, он располагается друг за другом по горизонтали, разделитель задан вставкой границы справа от элемента, за исключением последнего тега.-->
+        <div class="first">
+            <a href="onliner.by" title="AAA">первая ссылка</a>            
+            <a href="onliner.by" title="AAA">вторая ссылка</a>
+            <a href="onliner.by" title="AAA">третья ссылка</a>
+            <a href="onliner.by" title="AAA">четвёртая ссылка</a>
+            <a href="onliner.by" title="AAA">пятая ссылка</a>
+        </div>
+        <!--В этом способе использовано стилевое свойтсво display:inline-block, элементы отображаются как блочные, но не с новой строки, а в той же строке, разделитель создан при помощи заданных параметров дива.-->
+        <div class="second">
+            <a href="onliner.by" title="AAA">первая ссылка</a>
+            <div></div>
+            <a href="onliner.by" title="AAA">вторая ссылка</a>
+            <div></div>
+            <a href="onliner.by" title="AAA">третья ссылка</a>
+            <div></div>
+            <a href="onliner.by" title="AAA">четвёртая ссылка</a>
+            <div></div>
+            <a href="onliner.by" title="AAA">пятая ссылка</a>
+        </div>
+        <!--В данном случае, как и в предыдущем, использовано стилевое свойтсво display:inline-block, в качестве разделителя используем картинку -->
+        <div class="third">
+            <div><a href="onliner.by" title="AAA">первая ссылка</a><div></div></div>           
+            <div><a href="onliner.by" title="AAA">вторая ссылка</a></div>
+            <div><a href="onliner.by" title="AAA">третья ссылка</a></div>
+            <div><a href="onliner.by" title="AAA">четвёртая ссылка</a></div>
+            <div><a href="onliner.by" title="AAA">пятая ссылка</a></div>
+        </div>
+
+</body>
+</html>

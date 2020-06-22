@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stars</title>
+</head>
+<style>
+    div {
+        display: inline-block;       
+    }
+    .good{
+        background: url(../img/star0.png) no-repeat;
+        height: 79px;
+        width: 75px;
+        float: right;
+    }
+    div.good:hover,
+    div.good:hover~div{
+        background: url(../img/star1.png) no-repeat;
+        transform: rotateY(180deg);
+    }
+    
+</style>
+<body>
+    <div style="height: 200px;">
+        <div class="good"></div>
+        <div class="good"></div>
+        <div class="good"></div>
+        <div class="good"></div>
+        <div class="good"></div>
+        
+    </div>
+</body>
+</html>
