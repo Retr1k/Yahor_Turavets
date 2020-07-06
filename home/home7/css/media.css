@@ -1,20 +1,205 @@
 @media all and (max-width: 1360px){
     .container{
-        width: 760px;
+        width: 769px;
+    }
+
+    .catalog div h3{
+        font-size: 30px;
+    }
+    .catalog div{
+        width: 379px;
+    }
+    .catalog1 > div{
+        width: 100%;       
+        background-size: cover;
+        margin-bottom: 10px;
+        float: none;
+    }
+    
+    
+    .catalog1Right > div:first-child,
+    .catalog1Right > div:last-child{
+        background-size: cover;
+        width: 380px;
+    }
+    .catalog1Left{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .catalog1Right{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .reverse .catalog1Right,
+    .reverse .catalog1Left {
+        float: none;
+        margin-top: 10px;
+        background-size: cover;
+    }
+    .reverse .catalog1Right > div:first-child,
+    .reverse .catalog1Right > div:last-child{
+        background-size: cover;
+    }
+    .recipe{
+        width: auto;
+    }
+    .recipe:nth-child(even){
+        margin-left: 0px;
+    }
+    .recipeContentFooter {
+        padding-top: 35px;
+    }
+    .contentWrap .hotSelection ul li{
+        width: 379px;
+        background-size: cover;
+        margin-right: 0px;
+    }
+    .hotSelection ul li:nth-child(odd){
+        float: left;
+    }
+    .hotSelection ul li:nth-child(even){
+        float: right;
+    }
+    .hotSelection ul li:nth-child(3),
+    .hotSelection ul li:nth-child(4){
+        margin-top: 10px;
+    }
+    .topAuthors{
+        width: 470px;
+    }
+    .topAuthors div{
+        margin-bottom: 10px;
+    }    
+}
+@media all and (max-width: 992px){
+    .container{
+        width: 569px;
+    }
+    .catalog div{
+        width: 100%;
+        margin-bottom: 10px;        
+    }
+    .catalog div:first-child,
+    .catalog div:last-child {
+        float: none;
+        background-size: cover;
+    }
+    .catalog1{
+        margin-top: 0px;
+    }
+    .catalog1 > div{
+        width: auto;
+    }
+    .catalog1Right > div:first-child, 
+    .catalog1Right > div:last-child {
+        width: 280px;
+    }
+    .reverse .catalog1Right {
+        margin-top: 0px;
+    }
+    .contentWrap .hotSelection ul li {
+        width: 280px;
     }
 }
-.catalog div h3{
-    font-size: 30px;
+@media all and (max-width: 770px){
+    .container{
+        width: 469px;
+    }
+    .catalog1Right > div:first-child, 
+    .catalog1Right > div:last-child {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .reverse .catalog1Right > div:first-child {
+        margin-right: 0px;
+        
+    }
+    /* ЧТО ТУТ ДЕЛАТЬ? */
+    .reverse .catalog1Left{
+        margin-top: 287px;
+    }
+    .recipe{
+        height: auto;
+    }
+    .recipe .recipeImg{
+        float: none;
+        width: auto;
+        background-size: cover;
+    }
+    .recipe .recipeContent{
+        margin-left: 0px;
+    }
+    .recipe .recipeContent .recipeContentFooter{
+        padding-top: 5px;
+    }
+    .contentWrap .hotSelection ul li{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .hotSelection ul li:nth-child(3), 
+    .hotSelection ul li:nth-child(4) {
+        margin-top: 0px;
+    }
+    .footerNav li {
+        font-size: 14px;
+    }
 }
-.catalog div{
-    width: 379px;
+@media all and (max-width: 670px){
+    .container{
+        width: 330px;
+    }
+    .sideMenu .social{        
+        padding-bottom: 10px;
+    }
+    .topAuthors{
+        width: auto;
+    }
+    .footerNav{
+        width: 200px;
+        line-height: 25px;
+        padding-top: 5px;
+    }
+    .footerSocial{
+        padding-top: 15px;
+    }
+    .topAuthors > div{
+        width: 55px;
+        height: 55px;
+    }
+    .footer .container {
+        padding-top: 5px;
+    }
 }
-.catalog > div{
-    width: 100%;
-    background-size: cover;
-    margin-bottom: 10px;
-}
-.catalog1Right > div:first-child,
-.catalog1Right > div:last-child{
-    background-size: cover;
-}
+@media all and (min-width: 320px) and (max-width: 528px){
+    .container{
+        width: 318px;
+    }
+    .wrapper{
+        width: auto;
+    }
+    .sideMenu{
+        float: none;
+        width: auto;
+    }
+    .sideMenu .language{
+        margin-top: 126px;
+    }
+    .contentWrap{
+        margin-left: 0px;
+    }
+    .searchTop .icons{
+        margin: 0px;
+    }
+    .footer .container{
+        padding-top: 0;
+    }
+    .footerSocial{
+        float: none;
+        text-align: center;
+    }
+    
+}    
