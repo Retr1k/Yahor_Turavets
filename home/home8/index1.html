@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaketForm</title>
+    <style>
+        body{
+           
+        }
+        input[name="articleTitle"], select[name="headings"]{
+            margin-bottom: 5px;
+        }
+        text{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+            resize: none;
+        }
+        form input:first-child{            
+            width: auto;
+        }
+        .menu{
+            width: 200px;
+            float: left;
+            line-height: 22px;
+        }
+        .forma{            
+            margin-left: 200px;
+        }
+        p{
+            margin: 0 0;
+        }
+        .clearfix{
+            content: "";
+            clear: both;
+        }
+        form input:first-child{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+        <div class="menu">
+            <p>Название статьи:</p>
+            <p>Рубрика: </p>
+            <p>Публикация: </p>
+            <p>Разрешить комментарии: </p>
+        </div>
+        <div class="forma">
+            <form method="post" action="http://fe.it-academy.by/TestForm.php">        
+                <input type="text" name="articleTitle"><br>                
+                <select name="headings" >
+                    <option value="programming">программирование</option>
+                    <option value="computer">компьютерная техника</option>
+                    <option value="graphics">графика и дизайн</option>
+                </select><br>                
+                <input type="radio" name="online" value="1">на сайте
+                <input type="radio" name="offline" value="2">в журнале
+                <input type="radio" name="onAndOff" value="3">нан сайте и в журнале
+                <br>                
+                <input type='checkbox' name='comments' value='YES' checked><br>
+                
+        </div>
+        <div class="clearfix">
+        Текст статьи:
+                <textarea name="text"></textarea>
+                <input type="submit" value="Опубликовать">
+                </form>
+            </div>
+        
+    
+</div>
+
+</body>
+</html>
