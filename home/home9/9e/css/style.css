@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+h1,h2{
+    text-align: center;
+}
+.header{
+    background-color: #ADD8E6;
+    position: relative;
+    
+}
+.signIn{
+    background-color: lightgreen;
+    padding: 10px 0;
+    position: fixed;
+    text-align: center;
+    border: solid green 1px;
+    width: 100px;
+    right: 5mm;
+    top: 5mm;
+}
+.menuBg{
+    background-color: #F0E68C;
+    display: flex;
+}
+.menu {
+    padding: 10px;
+    flex: 0 1 200px;
+}
+.content{                
+    padding: 10px;
+    text-indent: 1.5em;
+    background: url(../img/theBall.gif) no-repeat right top;
+    background-repeat: repeat-y;
+    background-color: #ffffff;
+    flex: 1 1 400px;
+}
+.imageLeft{
+    float: left;
+}
+.footer{
+    background-color: #ADD8E6;
+}

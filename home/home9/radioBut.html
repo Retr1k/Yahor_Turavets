@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home9</title>
+    <style>
+    .clearfix{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    input.radioBut{
+        display: none;
+    }
+    input.radioBut + label{
+        float: left;
+        background-color: yellowgreen;
+        display: block;
+        margin-right: 5px;
+        padding: 0 10px 0 10px;
+        border-radius: 10px 10px 0 0;
+        line-height: 32px;
+    }
+    input.radioBut:first-child + label{
+        margin-left: 10px;
+    }
+    input.radioBut:checked + label{
+        background-color: cornflowerblue;
+    }
+    input.radioBut + label + div{
+        display: none;
+    }
+    input.radioBut:checked + label + div{
+        display: block;
+        position: absolute;
+        text-align: center;
+        left: 0;
+        top: 30px;
+        min-width: 360px;
+        background-color: cornflowerblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    </style>    
+</head>
+<body>
+    <div style='position: relative'>
+
+        <input type=radio name=TAB id=TAB1 checked class='radioBut'>
+        <label for=TAB1>первая строфа</label>
+        <div class='tabDiv'>
+            Олег налил себе текилу<br>
+            Потом бурбон потом коньяк<br>
+            Но Маша все не хорошела<br>
+            Никак<br>           
+        </div>
+    
+        <input type=radio name=TAB id=TAB2 class='radioBut'>
+        <label for=TAB2>вторая строфа</label>
+        <div class='tabDiv'>
+            Олег решил не верить в бога<br>
+            И чтоб был плавный переход<br>
+            Он в понедельник начинает<br>
+            Ему слегка не доверять<br>
+        </div>
+        <input type=radio name=TAB id=TAB3 class='radioBut'>
+        <label for=TAB3>третья строфа</label>
+        <div class='tabDiv'>
+            Олег женился на себе<br>
+            И все завидуют ему<br>
+            Ведь по любви не по залету<br>
+            И муж прекрасный человек<br>
+        </div>    
+        
+    </div>
+       
+    
+</body>
+</html>

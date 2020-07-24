@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read ans see more</title>
+    <style>
+        .main {
+            background-color: tomato;
+            width: 350px;
+            border-radius: 10px;
+            padding-left: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            float: left;
+        }
+        /* оба чекбокса скрыты всегда, работа с ними только через label */
+        input.readMore
+        {
+            display: none;
+        }
+    
+        /* большой текст обычно скрыт */
+        input.readMore + label + div
+        {
+            display: none;
+        }
+        /* и отображается только если выбран первый чекбокс */
+        input.readMore:checked + label + div
+        {
+            display: block;
+            background-color: tomato;
+        }
+    
+        /* первый label обычно отображается */
+        input.readMore + label
+        {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        /* и скрывается если выбран первый чекбокс */
+        input.readMore:checked + label
+        {
+            display: none;
+        }
+    
+        /* второй label обычно скрыт */
+        input.readMore + label + div + input + label
+        {
+            display: none;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        /* и отображается только если выбран первый чекбокс */
+        input.readMore:checked + label + div + input + label{
+            display: block;
+        }
+        .second {
+            background-color: yellow;
+            width: 350px;
+            border-radius: 10px;
+            padding-left: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            float: left;
+        }
+        input.seeMore + label + div{
+            display: none;
+        }
+
+        input.seeMore:checked + label + div{
+            display: block;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+
+        <div>
+            Ты слишком мал куда ты лезешь<br>
+            ты слишком стар зачем тебе<br>
+            и скажут в речи поминальной<br>
+            не смог а кто ему мешал<br>           
+        </div>
+    
+        <input type=radio class='readMore' name=pirozhok id=pirozhok1 value=1>
+        <label for=pirozhok1>показать больше</label>
+
+        <div>
+            <br>  Аркадий не любил пробежки<br>
+            паркур экстрим адреналин<br>
+            но два соседских добермана<br>
+            раскрыли в нем потенциал<br>
+            <br>
+            У губернатора дилемма<br>
+            где взять асфальта для дорог<br>
+            чтоб ездить на порше который<br>
+            по накладным и есть асфальт<br>
+
+        </div>
+
+        <input type=radio class='readMore' name=pirozhok id=pirozhok2 checked value=2>
+        <label for=pirozhok2>скрыть</label>
+    
+    </div>
+    <div class="second">
+        <div>
+            Оксана жить не успевает <br>
+            поскольку очень много дел <br>
+            которые сперва закончи <br>
+            а уж потом уже живи<br>
+        </div>
+        <input type="checkbox" id="Show" class="seeMore">
+        <label for="Show">Показать больше</label>
+        <div>
+            <br> 
+            Когда илье звонит начальник<br>
+            он сразу трубку не берет<br>
+            а выжидает полминуты<br>
+            и в это время он бунтарь<br><br>
+
+            Пришла весна теперь качели<br>
+            без страха можно облизать<br>
+            но оттого что стало можно<br>
+            на вкус они уже не те<br>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@media all and (min-width: 721px) and (max-width: 1060px){
+    h1,
+    .footer{
+        background-color: red;
+    }
+    .menu{
+        float:none;
+    }
+    .menuBg{
+        background-color: lightcoral;
+        transition-duration: 2s;
+    }
+    .content{
+        margin-left: 0;
+    }
+    .content > h2{
+        padding-bottom: 10px;
+        color: blueviolet;
+        transition-duration: 2s;
+    }
+    .content p{
+        color: slateblue;
+        transition-duration: 2s;
+    }
+    .content h2 + div{
+        float: none;     
+    }
+    .content h2 + div img{
+        width: 100%;
+        
+    }
+    
+}
+@media all and (min-width: 320px) and (max-width: 720px){
+    h1,
+    .footer{
+        background-color: orange;
+        transition-duration: 2s;
+    }
+    .menu{
+        float:none;
+        display: inline;
+    }
+    .menuBg{
+        background-color: darkorange;
+        transition-duration: 2s;
+    }
+    .content{
+        margin-left: 0;
+    }
+    .content > h2{
+        padding-bottom: 10px;
+        color: brown;
+        transition-duration: 2s;
+    }
+    .content p{
+        color: orangered;
+        transition-duration: 2s;
+    }
+    .content h2 + div{
+        float: none;     
+    }
+    .content h2 + div img{
+        width: 100%;
+        
+    }
+    
