@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 10000px;
+    font-size: 16px;
+    background-color: #191919;
+}
+
+h2{
+    font-size: 30px;
+}
+span{
+    font-size: 20px;
+}
+.clearfix{
+    contain: "";
+    clear: both;
+    display: block;
+}
+.wrapper{
+    
+}
+.container{
+    max-width: 1142px;
+    margin: 0 auto;    
+}
+.subtitle{
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px 0px 49px;
+}
+.subtitle span{
+    color: #12C2E9;    
+}
+/* <---header---> */
+.headerBg{
+    height: 594px;
+    background: url(../img/header.jpg) no-repeat center;
+}
+header{
+    position: relative;
+    background-size: contain;
+}
+.logo{
+    position: absolute;
+    padding-top: 35px;    
+}
+header span{
+    font-size: 28px;
+    color: #FFFFFF;
+}
+header span > span{
+    font-size: 28px;
+    color: #F80759;
+}
+nav{
+    padding-top: 45px;
+    padding-right: 15px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+nav ul li{
+    margin: 0 10px;
+}
+nav ul li a{
+    font-size: 18px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+/* nav ul li a:checked{
+    color:#F80759;
+    text-decoration: none;
+} */
+.spam{
+    margin-top: 204px;    
+}
+.spam span{
+    font-size: 36px;
+    color: #12C2E9;
+}
+.spam span > span{
+    font-size: 48px;
+    color: #FFFFFF;
+}
+.spam p{
+    color: #FFFFFF;
+}
+header button{
+    margin-top: 28px;
+    margin-right: 19px;
+    width: 200px;
+    height: 51px;
+    background: transparent;
+    border: solid 1px #F80759;
+    border-radius: 5px;
+    color: #FEFEFE;
+}
+/* <--- About Us ---> */
+.aboutMain{
+    margin: 48px auto 80px;
+    display: flex;
+}
+.aboutText{
+    max-width: 511px;
+    flex: 1 0;
+    margin-top: 61px;    
+}
+.aboutText span{
+    color: #12C2E9;
+    font-size: 18px;
+}
+.aboutText h2{
+    color: #FFFFFF;
+    font-size: 28px;  
+}
+.aboutText p{
+    color: #FFFFFF;
+}
+.aboutText a{
+    color: #F80759;
+    text-decoration: none;
+}
+.aboutMedia{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.mediaVideo{
+    width: 565px;
+    height: 401px;
+    background: url(../img/img1.jpeg) no-repeat center;
+}
+.aboutMediaPhotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.aboutMediaPhotos div:nth-child(1){
+    background: url(../img/img2.jpeg) no-repeat center;
+    width: 171px;
+    height: 101px;
+}
+.aboutMediaPhotos div:nth-child(2){
+    background: url(../img/img3.jpeg) no-repeat center;
+    width: 171px;
+    height: 101px;
+}
+.aboutMediaPhotos div:nth-child(3){
+    background: url(../img/img4.jpeg) no-repeat center;
+    width: 171px;
+    height: 101px;
+}
+/* <--- Trainers ---> */
+.trainers{
+    margin-bottom: 96px;
+}
+.trainersPhotos{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+.trainersPhotos div{
+    width: 213px;
+    height: 301px;
+    filter: grayscale();
+}
+.trainersPhotos div:nth-child(1){
+    background: url(../img/trainer1.jpeg) no-repeat center;
+}
+.trainersPhotos div:nth-child(2){
+    background: url(../img/trainer2.jpeg) no-repeat center;
+}
+.trainersPhotos div:nth-child(3){
+    background: url(../img/trainer3.jpeg) no-repeat center;
+}
+.trainersPhotos div:nth-child(4){
+    background: url(../img/trainer4.jpeg) no-repeat center;
+}
+.trainersPhotos div:nth-child(5){
+    background: url(../img/trainer5.jpeg) no-repeat center;
+}
+/* <--- Programs ---> */
+.ourPrograms{
+    background-color: #161616;
+}
+.ourPrograms > div{
+    padding-bottom: 81px;
+}
+.programs{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;    
+}
+div.programs > div{
+    height: 343px;
+    color: #FEFEFE;
+    width: 319px;
+}
+.icons{
+    border: solid #F80759 1px;
+    border-radius: 270%;
+    width: 101px;
+    height: 101px;
+    margin: 0 auto;
+}
+div.icons img{    
+    padding: 25px;
+}
+div.programs > div > a{
+    text-decoration: none;
+    color: #FEFEFE;
+    border: solid #F80759 1px;
+    padding: 21px 38px 21px 37px;
+    border-radius: 10px;
+}
+/* <--- Reviews ---> */
+.reviews{
+    background: url(../img/ReviewBg.jpg);    
+}
+.reviewsPeople{
+    display: flex;
+    justify-content: space-between;
+}
+.reviewsPeople > div{
+    width: 556px;
+    height: 301px;    
+}
+.reviewsPeople > div:first-child{
+    background: url(../img/client1.jpeg) no-repeat center;
+}
+.reviewsPeople > div:last-child{
+    background: url(../img/client2.jpeg) no-repeat center;
+}

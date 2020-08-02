@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            margin: 50px auto;
+        }
+        .fighter{
+            background: url(img/5f2035ed03ae3.png) no-repeat 0px 0px;
+            width: 150px;
+            height: 145px;
+            animation-iteration-count: unset;
+            animation: Anime 1s steps(4) infinite,
+                       Anime2 1s steps(4) infinite;
+        }
+        .quadro{
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: aqua;            
+            -webkit-clip-path: ellipse(100px 100px at 50% 50%);
+        }
+        .else{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: absolute;
+            left: 232px;
+            top: 101px;
+        }
+        div.wrapper:hover > div.else{            
+            animation: Anime4 3s infinite;
+        }
+        div.wrapper:hover > div.quadro{
+            animation: Anime6 4s infinite,
+                       Anime3 5s infinite;
+        }
+        @keyframes Anime{
+            from    {
+                background: url(img/5f2035ed03ae3.png) 0px 0px;}
+            to  {
+                background: url(img/5f2035ed03ae3.png) -576px 0px;}
+        }
+        @keyframes Anime2{
+            from {
+                background: url(img/5f2035ed03ae3.png) 0px -150px;}
+            
+            to {
+                background: url(img/5f2035ed03ae3.png) -576px -150px;}
+            
+        }
+        @keyframes Anime3{
+            from { 
+                background-color: orange; color: red 
+            }
+            50% { 
+                background-color: rgb(248, 232, 11); color: rgb(197, 33, 4) 
+            }
+            to {
+                background-color: orange; color: rgb(8, 8, 66) 
+            }
+        }
+        @keyframes Anime4{
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes Anime5{
+            from {
+                transform: scaleX(1)
+            }
+            to {
+                transform: scaleX(2)
+            }
+        }
+        @keyframes Anime6{
+            from   {
+                -webkit-clip-path: ellipse(100px 100px at 50% 50%);
+            }
+            to{
+                -webkit-clip-path: ellipse(800px 100px at 50% 50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="fighter"></div>
+        <div class="quadro"></div>
+        <div class="else"></div>
+    </div>
+</body>
+</html>
